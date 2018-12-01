@@ -5,8 +5,22 @@
     font-weight: 300;
     font-size: 24px;
     color: green;
+    display: flex; 
 }
-.TodoItem-done{
+.TodoItem:last-child{
+	border-bottom: none;
+}
+.TodoItem > p {
+	margin: -9px 1px 15px 34px;
+	padding: 10px 5px;
+	border-bottom: 1px solid #bebebe;
+}
+.TodoItem > img{
+	width: 30px;
+    height: 30px;
+    padding: 3px 0px 0px 12px;
+}
+.TodoItem-done > p{
 	text-decoration: line-through;
 	opacity: .3;
 }
